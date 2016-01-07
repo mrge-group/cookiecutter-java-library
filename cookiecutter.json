@@ -1,0 +1,12 @@
+{
+    "full_name": "Your Name",
+    "email": "{{ cookiecutter.full_name|lower|replace(' ', '.') }}@s24.com",
+    "project_name": "Hello World",
+    "open_source": "y",
+    "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "maven_group_id": "com.s24",
+    "maven_artifact_id": "{{ cookiecutter.repo_name|replace('-', '') }}",
+    "version": "0.1.0-SNAPSHOT",
+    "description": "A useful library",
+    "java_version": "1.8"
+}
